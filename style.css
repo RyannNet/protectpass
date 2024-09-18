@@ -1,0 +1,80 @@
+body{
+  background-color: #1e1c2a;
+  text-align: center;
+ background url:('kj.png');
+color: #ffffff;
+  font-family: 'SUSE', sans-serif;
+
+}
+
+}
+iput{
+  background-color: #ffffff;
+  outline: 1px solid #ffd4d4;
+  height:30px;
+  width: 234px;
+  color:#000000;
+  border-radius: 50px;
+  border:none;
+box-shadow: 12px 18px 20px #000; /* Adicione a cor da sombra (preto) */
+
+}
+button{
+background-color:#2274ff;
+outline: 1px solid #004bbb;
+color:#ffffff;
+border:none;
+border-radius: 15px;
+height: 30px;
+width: 200px;
+font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  transition: 0.2s;
+}
+button:hover{
+background-color:#003d7f;
+outline: 1px solid #003db2;
+color:#ffffff;
+border:none;
+border-radius: 15px;
+height: 30px;
+width: 200px;
+font-family: "Rubik", sans-serif;
+width: 234px;
+height: 30px;
+  font-optical-sizing: auto;
+  transition: 0.5s;
+  box-shadow: 4px 8px 15px #0039d1;
+
+}
+hr{
+  background-color: #1f7bff;
+  color:rgb(79,111,255);
+}
+
+input{
+  background-color: #1a182b;
+  outline: 1px solid #4490ff; /* Opacidade ajustada para 50% */
+  height: 30px;
+  width: 50px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 1px 7px 9px #265dfea4; /* Opacidade removida */
+  color: #e6fcff;
+  transition: 0.4s;
+  
+}
+input:hover{
+  background-color: #1a182b;
+  outline: 1px solid #ffa4a4; /* Opacidade ajustada para 50% */
+  height: 40px;
+  width: 234px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 1px 7px 17px #ff4444; /* Opacidade removida */
+  color: #e6fcff;
+  transition: 0.2s;
+}
+.sd{
+  text-align: left;
+}
