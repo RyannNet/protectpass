@@ -1,9 +1,13 @@
 function evaluatePassword(password) {
     const statusElement = document.getElementById('passwordStatus');
-
     if (password.length === 0) {
-        statusElement.textContent = 'Verifique a segurança da senha.';
-        statusElement.style.color = '#636363';
+        statusElement.textContent = 'Para prosseguir digite um número de 0/64.';
+        statusElement.style.color = '#ff7a7a';
+
+        // Define um tempo limite para limpar a mensagem após 5 segundos
+        setTimeout(() => {
+            statusElement.textContent = '';
+        }, 3000); // 5000 milissegundos = 5 segundos
     } else if (password.length < 8) {
         statusElement.textContent = 'Senha vulnerável';
         statusElement.style.color = 'orange';
@@ -15,6 +19,8 @@ function evaluatePassword(password) {
         statusElement.style.color = 'green';
     }
 }
+
+// ... (resto do código)
 
 function generatePassword() {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()';
@@ -37,7 +43,7 @@ function generatePassword() {
     }
 
     const passwordOutput = document.getElementById('passwordOutput');
-    passwordOutput.textContent = `Senha gerada: ${password}`;
+    passwordOutput.textContent = `Status:${password}`;
     evaluatePassword(password);
 
     savePasswordToHistory(password);
@@ -61,6 +67,8 @@ function viewHistory() {
         const listItem = document.createElement('li');
         listItem.textContent = password;
         historyList.appendChild(listItem);
+ 
+          
     });
 
     container.style.display = 'none';
