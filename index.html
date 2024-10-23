@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=SUSE&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
-</head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProtectPass™</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body>
-<body style="background-image: url('background.png'); background-size: cover;">
     <div class="container">
-      <div class="sd">
-       <img src="as.png" height="40" width="40"><h2>ProtectPass™</h2>
-        </div><p>
-        
+        <div class="sd">
+            <img src="as.png" height="30" width="90">
+            <h2>ProtectPass™</h2>
+        </div>
+        <p></p>
         <div class="password-section">
             <div>
-              <div></div>
                 <label for="passwordLength">Escolha o número de dígitos:</label>
-                
-               <p><input placeholder="Coloque um 7/65 num."type="number" id="passwordLength" min="1" max="65" value="">
+                <p><input placeholder="Coloque um 7/65 num." type="number" id="passwordLength" min="1" max="65" value=""></p>
             </div>
             <p>Aperte em Gerar!</p>
-            <button onclick="generatePassword()">Gerar Senha</button><p></p>
+            <button onclick="generatePassword()">Gerar Senha</button>
+            <p></p>
         </div>
-        <div id="passwordOutput" class="output"><p> </p></div>
-        <div id="passwordStatus" class="status"></div></div><p></p>
-        <button onclick="viewHistory()">Histórico de Senhas</button>
+        <div id="passwordOutput" class="output">
+            <p></p>
+        </div>
+        <div id="passwordStatus" class="status"></div>
     </div>
-
+    <p></p>
+    <button onclick="viewHistory()">Histórico de Senhas</button>
     <div id="historyContainer" class="container" style="display: none;">
         <h2>Histórico de Senhas</h2>
         <ul id="passwordHistory"></ul>
-        <button onclick="clearHistory()
-        ">Excluir Histórico de Senhas</button><p></p>
+        <button onclick="clearHistory()">Excluir Histórico de Senhas</button>
+        <p></p>
         <button onclick="goBack()">Voltar</button>
     </div>
-    <hr>
-    </div>
-    <p>Você pode usar o ProtectPass gratís, sem interrupções</p>
-    <p><p></p></p>
+  
+    </div><p>
+    <div class="klp">
+      <h1>ANÚNCIOS?</h1>
+      <img src="adic.png " height="60" width="60" alt="adic.png ">
+    <p>Oferecemos segurança gratuita para todos os usuários sem anúncio, seja muito bem-vindo(a) ao ProtectPass!</p></div>
+    <p></p>
     <h4>Site criado e desenvolvido por:
-    <img src="blg.png" height="90" width="250"></h4>
-   
-<footer><div class="gk">Todos direitos reservados a ProtectPass ©2021</div></footer>
+        <img src="blg.png" height="90" width="250">
+    </h4>
+    <footer>
+        <div class="gk">Todos direitos reservados a ProtectPass ©2021</div>
+    </footer>
     <script src="scripts.js"></script>
-    </p>
 </body>
 </html>
