@@ -3,6 +3,7 @@ body {
   background-image: linear-gradient(90deg,  #000000, #00062D);
   color: #ffffff;
   font-family: 'Rethink Sans', sans-serif;
+  filter: blur(5px);
 }
 
 input {
