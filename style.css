@@ -1,133 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  text-align: center;
-  background-image: linear-gradient(90deg,  #000000, #00062D);
-  color: #ffffff;
-  font-family: 'Rethink Sans', sans-serif;
-  -webkit-backdrop-filter: blur(3px);
+    text-align: center;
+    color: #ffffff;
+    background: #05060B;
+    font-family: 'Rethink Sans', 'Raleway', sans-serif;
+    line-height: 1.6;
+    padding: 1.5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-input {
-  background-color: #ffffff;
-  outline: 1px solid #ffd4d4;
-  height: 30px;
-  width: 234px;
-  color: #FFFFFF;
-  border-radius: 50px;
-  border: none;
-  box-shadow: 12px 18px 20px #000;
-  /* Adicione a cor da sombra (preto) */
-  font: Raleway, sans-serif;
-  filter: blur(5px);
-  -webkit-backdrop-filter: blur(3px); 
-}
-
-button {
-  background-color: #ffffff;
-  outline: 1px solid #6A6A6A;
-  color: #000000;
-  border: none;
-  border-radius: 15px;
-  height: 30px;
-  width: 200px;
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  transition: 0.2s;
--webkit-backdrop-filter: blur(3px); 
-}
-
-button:hover {
-  background-color: #000000;
-  outline: 1px solid #FFFFFF;
-  color: #ffffff;
-  border: none;
-  border-radius: 15px;
-  height: 30px;
-  width: 200px;
-  font-family: "Rethink Sans", Sans-serif;
-  width: 234px;
-  height: 30px;
-  font-optical-sizing: auto;
-  transition: 0.5s;
-  box-shadow: 4px 8px 15px #1952BA;
-  filter: blur(5px);
-  -webkit-backdrop-filter: blur(3px); 
-
-}
-.klp {
-  background-image: linear-gradient(90deg, #FF0000, #3E0D0D);
-  height: 10px;
-  width: 365px;
-  border: none;
-  overflow: hidden;
-  transition: 0.5s;
-  border: none;
-  border-radius: 18px;
-  filter: blur(5px);
-  -webkit-backdrop-filter: blur(3px);
-
-.klp:hover{
-  background-image: linear-gradient(90deg, #00204D, #060014);
-  height: 230px;
-  width: 365px;
-  border: none;
-  transition: 0.3s;
-  outline: 2px solid #0053FF;
-  filter: blur(5px);
-  -webkit-backdrop-filter: blur(3px); 
-}
-
-input {
-  background-color: #1a182b;
-  outline: 1px solid #4490ff;
-  /* Opacidade ajustada para 50% */
-  height: 30px;
-  width: 50px;
-  border-radius: 50px;
-  border: none;
-  box-shadow: 1px 7px 9px #2F74FF;
-  /* Opacidade removida */
-  color: #e6fcff;
-  transition: 2s;
-  font-family: Rethink, sans-serif;
-filter: blur(5px);
-  -webkit-backdrop-filter: blur(3px); 
-
-input:hover {
-  background-color: #1a182b;
-  outline: 1px solid #9D72FF;
-  /* Opacidade ajustada para 50% */
-  height: 40px;
-  width: 234px;
-  border-radius: 50px;
-  border: none;
-  box-shadow: 1px 7px 17px #4500FF;
-  /* Opacidade removida */
-  color: #e6fcff;
-  transition: 0.3s;
-  font-family: 'Raleway', sans-serif
-  filter: blur(5px);
-  -webkit-backdrop-filter: blur(3px); 
+.container {
+    background: #0D0D0D;
+    padding: 2rem;
+    border: 1px solid #242424;
+    border-radius: 25px;
+    margin: 1rem auto;
+    max-width: 500px;
 }
 
 .sd {
-  text-align: left;
-  background-image: no-repeat;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
-.anim {
-  background-color: #0F1339;
-  height: 40px;
-  width: 100%;
-  z-index: -1;
-  transition: 0.8s;
+.sd img {
+    border-radius: 10px;
 }
-.ft {
-  text-align: center;
-  background-color: #989595;
-  color: #ffffff;
+
+.sd h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
-hr{
-  background-color: #4B0FD8;
-  color:#9F75FF;
-  outline-color: #9F75FF;
+
+input {
+    background-color: #1a182b;
+    outline: 1px solid #4490ff;
+    height: 45px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 11px;
+    border: none;
+    box-shadow: 1px 7px 9px rgba(47, 116, 255, 0.3);
+    color: #e6fcff;
+    padding: 0 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
 }
+
+input:hover, input:focus {
+    outline: 1px solid #9D72FF;
+    box-shadow: 1px 7px 17px rgba(69, 0, 255, 0.4);
+}
+
+button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 15px;
+    height: 45px;
+    width: 100%;
+    max-width: 300px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 1rem 0;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    outline: 1px solid #ffffff;
+    box-shadow: 4px 8px 15px rgba(25, 82, 186, 0.5);
+}
+
+.klp {
+    background-image: linear-gradient(90deg, #FF0000, #3E0D0D);
+    padding: 1.5rem;
+    border-radius: 18px;
+    margin: 2rem auto;
+    max-width: 400px;
+    transition: all 0.3s ease;
+}
+
+.klp:hover {
+    background-image: linear-gradient(90deg, #FF3333, #4B0D0D);
+    transform: scale(1.02);
+}
+
+.klp h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.klp p {
+    font-size: 1rem;
+    color: #f0f0f0;
+}
+
+.credits {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.credits h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #cccccc;
+    padding: 1rem 0;
+}
+
+.password-section {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.password-section label {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.output, .status {
+    margin: 1.5rem 0;
+    min-height: 2rem;
+    font-size: 1rem;
+    color: #e6fcff;
+}
+
+.history {
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    .container, .klp {
+        padding: 1rem;
+        margin: 0.5rem;
+        max-width: 100%;
+    }
+
+    button, input {
+        max-width: 100%;
+    }
+
+    .sd h2 {
+        font-size: 1.3rem;
+    }
+
+    .klp h3 {
+        font-size: 1.2rem;
+    }
+}
+
+.output{
+  background: #171717;
+  border: 1px solid #232323;
+  margin-bottom: 15px;
+  border-radius: 7px;
+  height: 50px;
+  
+  }
