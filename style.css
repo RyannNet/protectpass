@@ -3,6 +3,7 @@ body {
   background-image: linear-gradient(90deg,  #000000, #00062D);
   color: #ffffff;
   font-family: 'Rethink Sans', sans-serif;
+  -webkit-backdrop-filter: blur(3px);
 }
 
 input {
@@ -16,6 +17,8 @@ input {
   box-shadow: 12px 18px 20px #000;
   /* Adicione a cor da sombra (preto) */
   font: Raleway, sans-serif;
+  filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px); 
 }
 
 button {
@@ -29,6 +32,7 @@ button {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   transition: 0.2s;
+-webkit-backdrop-filter: blur(3px); 
 }
 
 button:hover {
@@ -45,6 +49,8 @@ button:hover {
   font-optical-sizing: auto;
   transition: 0.5s;
   box-shadow: 4px 8px 15px #1952BA;
+  filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px); 
 
 }
 .klp {
@@ -56,7 +62,8 @@ button:hover {
   transition: 0.5s;
   border: none;
   border-radius: 18px;
-}
+  filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px);
 
 .klp:hover{
   background-image: linear-gradient(90deg, #00204D, #060014);
@@ -65,6 +72,8 @@ button:hover {
   border: none;
   transition: 0.3s;
   outline: 2px solid #0053FF;
+  filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px); 
 }
 
 input {
@@ -80,8 +89,8 @@ input {
   color: #e6fcff;
   transition: 2s;
   font-family: Rethink, sans-serif;
-
-}
+filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px); 
 
 input:hover {
   background-color: #1a182b;
@@ -96,6 +105,8 @@ input:hover {
   color: #e6fcff;
   transition: 0.3s;
   font-family: 'Raleway', sans-serif
+  filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px); 
 }
 
 .sd {
